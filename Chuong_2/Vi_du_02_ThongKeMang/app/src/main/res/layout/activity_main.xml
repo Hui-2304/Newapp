@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/main"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:orientation="vertical"
+   android:padding="24dp">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="THỐNG KÊ MẢNG SỐ NGUYÊN"
+       android:textSize="22sp"
+       android:textStyle="bold"
+       android:gravity="center"
+       android:layout_marginBottom="24dp" />
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Nhập các số nguyên, cách nhau bằng khoảng trắng."
+       android:textSize="16sp" />
+
+   <EditText
+       android:id="@+id/edtMang"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Ví dụ: 10 5 20 8 15"
+       android:inputType="text"
+       android:singleLine="true"
+       android:minHeight="48dp"
+       android:layout_marginTop="12dp" />
+
+   <Button
+       android:id="@+id/btnThongKe"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Thống kê"
+       android:layout_marginTop="16dp" />
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:layout_marginTop="20dp">
+
+       <TextView
+           android:id="@+id/txtKetQua"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Kết quả sẽ hiển thị tại đây."
+           android:textSize="18sp"
+           android:textIsSelectable="true" />
+
+   </ScrollView>
+
+</LinearLayout>
